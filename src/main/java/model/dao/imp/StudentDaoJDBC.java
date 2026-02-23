@@ -231,6 +231,7 @@ public class StudentDaoJDBC implements StudentDao {
                 if(rs.next()){
                     int id = rs.getInt(1);
                     student.setId(id);
+                    System.out.println("Done! Student ID is: " + student.getId());
                 }
             }
             else{

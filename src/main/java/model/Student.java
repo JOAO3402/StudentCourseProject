@@ -61,7 +61,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "[Name = " + name + ", Birthdate = " + sdf.format(birthDate) + ", Grade = " + grade + ", Course = " + course + "]";
+        return "[Name = " + name + ", Birthdate = " + sdf.format(birthDate) + ", Grade = " + grade + ", " + course + "]";
     }
 
     @Override

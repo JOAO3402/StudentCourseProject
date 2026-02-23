@@ -6,11 +6,11 @@ import model.dao.imp.StudentDaoJDBC;
 
 public class DaoFactory {
 
-    public CourseDao createCourseDao(){
+    public static CourseDao createCourseDao(){
         return new CourseDaoJDBC(BD.getConnection());
     }
 
-    public StudentDao createStudentDao(){
+    public static StudentDao createStudentDao(){
         return new StudentDaoJDBC(BD.getConnection());
     }
 }
