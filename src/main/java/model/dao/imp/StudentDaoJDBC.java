@@ -233,6 +233,7 @@ public class StudentDaoJDBC implements StudentDao {
                     student.setId(id);
                     System.out.println("Done! Student ID is: " + student.getId());
                 }
+                BD.closeResultSet(rs);
             }
             else{
                 throw new BdException("Unexpected error! No rows affected");
